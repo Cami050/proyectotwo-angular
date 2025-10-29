@@ -1,0 +1,37 @@
+<div class="formulario">
+  <h2>Ejercicio 14: Tarjeta de presentación</h2>
+
+  <div class="campos">
+    <label>Nombre:</label>
+    <input type="text" [(ngModel)]="nombre">
+
+    <label>Edad:</label>
+    <input type="number" [(ngModel)]="edad">
+
+    <label>Profesión:</label>
+    <input type="text" [(ngModel)]="profesion">
+
+    <label>Género:</label>
+    <select [(ngModel)]="genero">
+      <option value="">Seleccione</option>
+      <option value="Femenino">Femenino</option>
+      <option value="Masculino">Masculino</option>
+      <option value="Otro">Otro</option>
+    </select>
+
+    <label>Ciudad:</label>
+    <input type="text" [(ngModel)]="ciudad">
+
+    <button (click)="mostrarTarjeta()">Mostrar tarjeta</button>
+  </div>
+
+  @if (mostrar) {
+    <div class="tarjeta">
+      <h3>{{ nombre }}</h3>
+      <p><strong>Edad:</strong> {{ edad }}</p>
+      <p><strong>Profesión:</strong> {{ profesion }}</p>
+      <p><strong>Género:</strong> {{ genero }}</p>
+      <p><strong>Ciudad:</strong> {{ ciudad }}</p>
+    </div>
+  }
+</div>

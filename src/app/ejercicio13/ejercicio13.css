@@ -1,0 +1,30 @@
+.contenedor {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.caja {
+  background-color: #4caf50;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.botones button {
+  margin: 5px;
+  padding: 8px 15px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botones button:hover {
+  background-color: #1976d2;
+}

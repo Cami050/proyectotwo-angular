@@ -1,0 +1,11 @@
+<div class="contenedor">
+  <h2>Ejercicio 6: Mostrar / Ocultar texto</h2>
+
+  <button (click)="alternarVisibilidad()">
+    {{ mostrar ? 'Ocultar' : 'Mostrar' }} párrafo
+  </button>
+
+  @if (mostrar) {
+    <p>Hola</p>
+  }
+</div>

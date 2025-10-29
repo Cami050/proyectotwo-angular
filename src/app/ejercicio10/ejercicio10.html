@@ -1,0 +1,19 @@
+<div class="calculadora">
+  <h2>Ejercicio 10: Calculadora básica</h2>
+
+  <div class="inputs">
+    <input type="number" [(ngModel)]="numero1" placeholder="Primer número" />
+    <input type="number" [(ngModel)]="numero2" placeholder="Segundo número" />
+  </div>
+
+  <div class="botones">
+    <button (click)="sumar()">Sumar</button>
+    <button (click)="restar()">Restar</button>
+    <button (click)="multiplicar()">Multiplicar</button>
+    <button (click)="dividir()">Dividir</button>
+  </div>
+
+  @if (resultado !== '') {
+    <h3>Resultado: {{ resultado }}</h3>
+  }
+</div>

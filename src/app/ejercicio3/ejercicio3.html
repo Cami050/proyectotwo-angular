@@ -1,0 +1,11 @@
+<div class="contenedor">
+  <h2>Ejercicio 3: Mostrar el nombre ingresado</h2>
+
+  <input type="text" [(ngModel)]="nombre" placeholder="Escribe tu nombre...">
+
+  @if (nombre.trim() !== '') {
+    <h3>Hola, {{ nombre }} 👋</h3>
+  } @else {
+    <p>Por favor, escribe tu nombre arriba.</p>
+  }
+</div>

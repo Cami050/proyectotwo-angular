@@ -1,0 +1,25 @@
+.contenedor {
+  text-align: center;
+  margin-top: 40px;
+}
+
+p {
+  font-size: 22px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+button {
+  margin-top: 15px;
+  background-color: #673ab7;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #4527a0;
+}

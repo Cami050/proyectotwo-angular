@@ -1,0 +1,15 @@
+.contenedor {
+  text-align: center;
+  margin-top: 40px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+h3 {
+  color: #00796b;
+  margin-top: 20px;
+}

@@ -1,0 +1,21 @@
+<div class="contenedor">
+  <h2>Ejercicio 15: Lista de países</h2>
+
+  <div class="formulario">
+    <input type="text" [(ngModel)]="nuevoPais" placeholder="Agregar país...">
+    <button (click)="agregarPais()">Agregar</button>
+  </div>
+
+  @if (paises.length > 0) {
+    <ul>
+      @for (pais of paises; track pais) {
+        <li>
+          {{ pais }}
+          <button class="eliminar" (click)="eliminarPais(paises.indexOf(pais))">x</button>
+        </li>
+      }
+    </ul>
+  } @else {
+    <p>No hay países en la lista.</p>
+  }
+</div>

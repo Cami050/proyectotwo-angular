@@ -1,0 +1,10 @@
+<div class="contenedor">
+  <h2>Ejercicio 5: Cambiar tamaño de fuente</h2>
+  <p [style.fontSize.px]="tamanoFuente">
+    Este texto cambia de tamaño al hacer clic en los botones.
+  </p>
+  <div class="botones">
+    <button (click)="aumentarTamano()">Aumentar</button>
+    <button (click)="disminuirTamano()">Disminuir</button>
+  </div>
+</div>

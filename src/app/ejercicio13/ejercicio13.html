@@ -1,0 +1,12 @@
+<div class="contenedor">
+  <h2>Ejercicio 13: Caja que cambia de tamano</h2>
+
+  <div class="caja" [style.width.px]="tamanoCaja" [style.height.px]="tamanoCaja">
+    {{ tamanoCaja }}px
+  </div>
+
+  <div class="botones">
+    <button (click)="aumentar()">Aumentar</button>
+    <button (click)="disminuir()">Disminuir</button>
+  </div>
+</div>

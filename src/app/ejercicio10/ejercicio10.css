@@ -1,0 +1,27 @@
+.calculadora {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.inputs input {
+  margin: 5px;
+  padding: 5px;
+  width: 120px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.botones button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botones button:hover {
+  background-color: #43a047;
+}

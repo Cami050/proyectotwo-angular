@@ -1,0 +1,11 @@
+<div class="contenedor">
+  <h2>Ejercicio 9: Mostrar u ocultar imagen</h2>
+
+  <button (click)="toggleImagen()">
+    {{ mostrarImagen ? 'Ocultar imagen' : 'Mostrar imagen' }}
+  </button>
+
+  @if (mostrarImagen) {
+    <img src="https://images.seeklogo.com/logo-png/50/1/angular-icon-logo-png_seeklogo-507324.png" alt="Imagen Angular" />
+  }
+</div>
